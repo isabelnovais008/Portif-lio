@@ -3,71 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfólio | Isabel Novais</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #4f46e5, #9333ea);
-      color: white;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f9fafb;
+      color: #111827;
     }
 
-    .card {
-      background: rgba(255, 255, 255, 0.15);
-      padding: 30px;
-      border-radius: 16px;
-      max-width: 400px;
-      text-align: center;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
     }
 
-    h1 {
-      margin-bottom: 10px;
-      font-size: 28px;
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      color: #374151;
+      max-width: 600px;
+    }
+
+    section {
+      margin-top: 60px;
     }
 
     h2 {
-      margin: 0;
-      font-weight: normal;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .project {
+      padding: 20px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .project:last-child {
+      border-bottom: none;
+    }
+
+    .project-title {
+      font-weight: 600;
       font-size: 18px;
-      opacity: 0.9;
     }
 
-    p {
-      margin-top: 15px;
-      font-size: 16px;
-      line-height: 1.5;
+    .project-desc {
+      color: #4b5563;
+      margin: 8px 0;
     }
 
-    a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 20px;
-      background: white;
-      color: #4f46e5;
+    .project a {
+      color: #2563eb;
       text-decoration: none;
-      border-radius: 25px;
-      font-weight: bold;
+      font-weight: 500;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 80px;
+      color: #6b7280;
+      font-size: 14px;
     }
   </style>
 </head>
+
 <body>
+  <div class="container">
+    <header>
+      <h1>Isabel Novais</h1>
+      <p>
+        Desenvolvedora web focada em sites profissionais, claros e funcionais
+        para pequenos negócios e profissionais autônomos.
+      </p>
+    </header>
 
-  <div class="card">
-    <h1>Isabel Novais</h1>
-    <h2>Desenvolvedora Web</h2>
+    <section>
+      <h2>Projetos</h2>
 
-    <p>
-      Crio sites modernos e profissionais para pequenas empresas
-      que querem presença online e mais clientes.
-    </p>
+      <div class="project">
+        <div class="project-title">Site institucional — Pet Shop</div>
+        <div class="project-desc">
+          Site responsivo para divulgação de serviços, informações e contato.
+        </div>
+        <a href="projetos/pet-shop/">Ver projeto</a>
+      </div>
 
-    <a href="#">Fale comigo</a>
+    </section>
+
+    <section>
+      <h2>Contato</h2>
+      <p>Email: isabel.novais008@gmail.com</p>
+    </section>
+
+    <footer>
+      © 2026 — Isabel Novais
+    </footer>
   </div>
-
 </body>
 </html>
